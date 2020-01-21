@@ -1,65 +1,37 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        oauth_client
-      </h1>
-      <h2 class="subtitle">
-        Main page
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div style="margin-left: +30%; margin-right: +30%;">
+      <div class="googleLogin" style="font-size: 23px; background-color: #ff5959; color: white; border-radius: 5px; padding: 20px 0px 20px; margin-bottom: 10px;">
+        <span><i class="fa fa-google" style="font-size:25px; margin-right:15px; margin-left:5px"></i></span>
+        <span>Login with Google</span>
+      </div>
+      <div class="facebookLogin" style="font-size: 23px; background-color: #4d7cff; color: white; border-radius: 5px; padding: 20px 0px 20px; margin-bottom: 10px;">
+        <span><i class="fa fa-facebook" style="font-size:25px; margin-right:15px; margin-left:5px"></i></span>
+        <span>Login with Facebook</span>
+      </div>
+      <div class="naverLogin" style="font-size: 23px; background-color: #1EC800; color: white; border-radius: 5px; padding: 20px 0px 20px; margin-bottom: 10px;">
+        <span><img src="../assets/naver_icon.png" alt="My Image"  width="25" height="25" style="margin: 0px 5px -5px;"></span>
+        <span>Login with NAVER</span>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
 export default {
   components: {
-    AppLogo
   }
 }
 </script>
 
 <style>
 .container {
+  margin-top: +20%;
   min-height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  text-align: left;
 }
 </style>
 
